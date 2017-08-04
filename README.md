@@ -3,6 +3,10 @@ Quick example showcasing Android's SQLiteDatabase. Used to permanently store dat
 
 No pictures are needed for this one. Just some code here...
 
+Of course, you may want to actually do something with the data returned from the SQLiteDatabase and not just simply print it out. For example, perhaps you may want to save some information about the currently signed in user such as their username, email address, etc. or some data about saved games such as high score, last action completed...
+
+I personally use this to save data that I know to be constant such as the aformentioned currently signed in user. Instead of constant requests to your database of backend for information about the signed in user, store a copy on the device and update it whenever the user updates their information. Then you can simply display this data in say, the profile activity or edit-profile activity.
+
 // Wrap in try-catch block
 
         try {
